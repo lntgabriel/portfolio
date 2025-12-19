@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio de Gabriel Lauton - Desenvolvedor Web focado em resolver problemas reais. React, JavaScript, TypeScript.">
+    <meta name="keywords" content="Gabriel Lauton, Desenvolvedor Web, Front-end, React, Portfolio, Cedesp">
+    <title>Gabriel Lauton | Dev & Problem Solver</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Mouse -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Lauton<span class="highlight">.</span></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projetos</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link nav__cta">Bora conversar?</a></li>
+                </ul>
+                <!-- Mobile -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- Menu Mobile -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-4-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- ==================== HERO SECTION ==================== -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/gabriel-lauton-131974390/" target="_blank"
+                            class="home__social-link" title="LinkedIn">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="https://github.com/lntgabriel" target="_blank" class="home__social-link"
+                            title="GitHub">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__data">
+                        <h3 class="home__subtitle">Salve, eu sou o Gabriel</h3>
+                        <h1 class="home__title">CONSTRUO COISAS <br> <span class="typing-effect">QUE FUNCIONAM.</span>
+                        </h1>
+                        <p class="home__description">
+                            Desenvolvedor em formação focado em resolver problemas sob pressão.
+                            Apaixonado por criar sistemas que facilitam a vida das pessoas.
+                        </p>
+                        <div class="home__buttons">
+                            <a href="#projects" class="button button--primary">
+                                Ver Projetos <i class="ri-arrow-right-line"></i>
+                            </a>
+                            <a href="#contact" class="button button--ghost">
+                                Contato
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Área da Foto -->
+                <div class="home__visual">
+                    <div class="home__blob"></div>
+                    <img src="images/eu.jpeg" alt="Gabriel Lauton" class="home__img">
+                </div>
+            </div>
+
+            <a href="#about" class="scroll__down">
+                <i class="ri-mouse-line scroll__icon"></i>
+                <span class="scroll__text">Scroll Up</span>
+            </a>
+        </section>
+
+        <!-- ==================== SOBRE ==================== -->
+        <section class="about section" id="about">
+            <h2 class="section__title" data-heading="Quem sou eu">Sobre Mim</h2>
+
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <p class="about__description">
+                        Sou naturalmente curioso e, por instinto, um <strong>resolvedor de problemas</strong>.
+                        Nada supera a satisfação de ver um sistema que construí rodando e sendo útil.
+                    </p>
+                    <p class="about__description">
+                        No off-screen: <span>Musculação</span>, <span>Jogos</span> e <span>Filmes</span>.
+                        Acredito na troca de ideias e num ambiente leve para que as melhores soluções apareçam.
+                        Atualmente estudando <strong>React, TypeScript e Javascript</strong> a fundo.
+                    </p>
+
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class="ri-flashlight-line about__icon"></i>
+                            <h3 class="about__title">Rápido Aprendizado</h3>
+                            <span class="about__subtitle">Evolução constante em tech</span>
+                        </div>
+                        <div class="about__box">
+                            <i class="ri-group-line about__icon"></i>
+                            <h3 class="about__title">Colaborativo</h3>
+                            <span class="about__subtitle">Trabalho em equipe</span>
+                        </div>
+                        <div class="about__box">
+                            <i class="ri-rocket-line about__icon"></i>
+                            <h3 class="about__title">Otimização</h3>
+                            <span class="about__subtitle">+30% de eficiência em projetos reais</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Tech Stack</h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-verified-badge-fill"></i>
+                                <div>
+                                    <h3 class="skills__name">HTML5 & CSS</h3>
+                                    <span class="skills__level">Projetos Funcionais</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-verified-badge-fill"></i>
+                                <div>
+                                    <h3 class="skills__name">JavaScript (ES6+)</h3>
+                                    <span class="skills__level">Estudando</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-verified-badge-fill"></i>
+                                <div>
+                                    <h3 class="skills__name">React.js</h3>
+                                    <span class="skills__level">Projetos Funcionais</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-verified-badge-fill"></i>
+                                <div>
+                                    <h3 class="skills__name">TypeScript</h3>
+                                    <span class="skills__level">Estudando</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-verified-badge-fill"></i>
+                                <div>
+                                    <h3 class="skills__name">Git & Github</h3>
+                                    <span class="skills__level">Estudando</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROJETOS REALIZADOS ==================== -->
+        <section class="projects section" id="projects">
+            <h2 class="section__title" data-heading="Meu Portfolio">Projetos Realizados</h2>
+
+            <div class="projects__container container grid">
+                <article class="projects__card featured">
+                    <div class="projects__content">
+                        <span class="projects__badge">Produção / Uso Real</span>
+                        <h3 class="projects__title">Sistema de Matrículas CEDESP</h3>
+                        <p class="projects__description">
+                            Um sistema full funcional desenvolvido para automatizar matrículas.
+                            Corrigi bugs críticos, implementei features e o resultado foi uma
+                            <strong>otimização de 30%</strong> no tempo de processamento.
+                        </p>
+                        <ul class="projects__tech-list">
+                            <li>React</li>
+                            <li>Vercel</li>
+                            <li>UX/UI</li>
+                        </ul>
+                        <div class="projects__links">
+                            <a href="https://sistema-cedesp.vercel.app" target="_blank"
+                                class="button button--small button--link">
+                                Ver ao vivo <i class="ri-external-link-line"></i>
+                            </a>
+                            <a href="https://github.com/lntgabriel" target="_blank"
+                                class="button button--small button--ghost">
+                                Código <i class="ri-github-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="projects__img-wrapper">
+                        <img src="images/print_cedesp.jpg" alt="Tela do Sistema Cedesp" class="project__img-featured">
+                    </div>
+                </article>
+
+                <!-- 2. PROJETO ATLASFIT -->
+                <article class="projects__card">
+                    <div class="projects__image-box">
+                        <img src="images/print_atlasfit.jpg" alt="AtlasFit UI" class="project__img-normal">
+                    </div>
+                    <div class="projects__content-mini">
+                        <h3 class="projects__title">AtlasFit - Guia de Academia</h3>
+                        <p class="projects__description">
+                            Projeto desenvolvido para treinar estruturação e conteúdo visual sobre treinos e saúde.
+                        </p>
+                        <div class="projects__links">
+                            <a href="https://lntgabriel.github.io/atlasfit/" target="_blank" class="link-item">Demo <i
+                                    class="ri-arrow-right-up-line"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3. PROJETO CUIDAMENTE -->
+                <article class="projects__card">
+                    <div class="projects__image-box">
+                        <img src="images/print_cuidamente.jpg" alt="Cuidamente UI" class="project__img-normal">
+                    </div>
+                    <div class="projects__content-mini">
+                        <h3 class="projects__title">Cuidamente</h3>
+                        <p class="projects__description">
+                            Focado em Web Design e saúde mental. Desenvolvido durante curso de Criação de Páginas.
+                        </p>
+                        <div class="projects__links">
+                            <a href="https://lntgabriel.github.io/cuidamente/" target="_blank" class="link-item">Demo <i
+                                    class="ri-arrow-right-up-line"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ==================== CONTATO ==================== -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title" data-heading="Vamos conversar?">Contato</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__subtitle">Me mande um alô</h3>
+                    <p class="contact__text">
+                        Estou buscando minha primeira oportunidade profissional. Se curtiu o meu perfil,
+                        o sistema que construí ou só quer trocar uma ideia sobre games e código, chama aí!
+                    </p>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="ri-mail-send-line"></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <a href="mailto:lautongabriel7@gmail.com" class="contact__button">Escrever Email <i
+                                    class="ri-arrow-right-line"></i></a>
+                        </div>
+                        <div class="contact__card">
+                            <i class="ri-linkedin-box-line"></i>
+                            <h3 class="contact__card-title">LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/gabriel-lauton-131974390/" target="_blank"
+                                class="contact__button">Conectar <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário -->
+                <form action="" class="contact__form">
+                    <div class="contact__form-div">
+                        <label class="contact__form-tag">Nome</label>
+                        <input type="text" placeholder="Seu nome" class="contact__form-input">
+                    </div>
+                    <div class="contact__form-div">
+                        <label class="contact__form-tag">Email</label>
+                        <input type="email" placeholder="Seu email" class="contact__form-input">
+                    </div>
+                    <div class="contact__form-div contact__form-area">
+                        <label class="contact__form-tag">Mensagem</label>
+                        <textarea placeholder="O que você manda?" class="contact__form-input"></textarea>
+                    </div>
+                    <button class="button button--primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Gabriel Lauton.</h1>
+            <ul class="footer__list">
+                <li><a href="#about" class="footer__link">Sobre</a></li>
+                <li><a href="#projects" class="footer__link">Projetos</a></li>
+                <li><a href="#contact" class="footer__link">Contato</a></li>
+            </ul>
+            <div class="footer__social">
+                <a href="https://github.com/lntgabriel" target="_blank" class="footer__social-link"><i
+                        class="ri-github-fill"></i></a>
+                <a href="https://www.linkedin.com/in/gabriel-lauton-131974390/" target="_blank"
+                    class="footer__social-link"><i class="ri-linkedin-fill"></i></a>
+            </div>
+            <span class="footer__copy">&#169; 2025 Gabriel Lauton. Feito na raça.</span>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
